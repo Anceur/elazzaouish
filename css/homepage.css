@@ -1,0 +1,79 @@
+
+body {
+   font-family: 'Cairo', sans-serif;
+   font-display: swap;
+ }
+ 
+#img-logo{
+    width: 110px; 
+    margin-top: -24px; 
+    }
+ .row{
+    justify-content: space-between;
+ }
+ .contact{
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .media-h {
+    justify-content: space-between;
+ }
+ .footer{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ @media (max-width: 991px) {
+    .maps{
+       width: 70%;
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+    }
+ }
+ 
+ @media (max-width: 441px) {
+    .maps{
+       width: 70%;
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+    }
+    #img-logo{
+     padding-top: 4px;
+     width: 90px;
+    }
+    .media-h {
+           justify-content: space-between;
+           flex-direction: column; /* Stack media-h-body under the image */
+    }
+   
+    .media-h-body {
+           margin-top: 15px; /* Add some space between image and text */
+    }
+ }
+ @media (min-width: 441px) and (max-width: 900px) {
+   #img-logo{
+      padding-top: 4px;
+      width: 90px;
+     }
+
+
+ }
+
+ @media (min-width: 900px) and (max-width: 12000px) {
+   #img-logo{
+      padding-top: 4px;
+      width: 90px;
+     }
+
+
+ }
+

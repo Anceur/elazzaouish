@@ -1,0 +1,203 @@
+/* From Uiverse.io by paesjr */ 
+.e-card {
+    margin: 100px auto;
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .icon {
+    width: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
+  }
+  
+  .infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .name {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    top: 1em;
+    text-transform: lowercase;
+  }
+  
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+  
+  .playing .wave {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+ 
+  /* General styles for the row */
+.row-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+  }
+  
+  /* Styles for each card column */
+  .col-12.col-sm-6.col-md-6.col-lg-4 {
+    flex: 0 0 calc(33.333% - 20px); /* Three cards per row */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex; /* Ensure cards stretch equally */
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* Makes all cards stretch equally */
+    display: flex;
+    flex-direction: column; /* Ensures content inside is aligned properly */
+    justify-content: flex-start;
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .level-circle {
+    background-color: #2a6bf6;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .infotopp-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .infotopp-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .col-12.col-sm-6.col-md-6.col-lg-4 {
+      flex: 0 0 calc(50% - 20px); /* Two cards per row on medium screens */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-12.col-sm-6.col-md-6.col-lg-4 {
+      flex: 0 0 100%; /* One card per row on small screens */
+      max-width: 100%;
+    }
+  }
+  
+
+
+/*  
+  
+  .card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  
+    .level-circle {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 10px;
+      background: linear-gradient(45deg, #6c63ff, #836aff);
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .infotopp-card {
+      h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #6c757d;
+      }
+  
+      p {
+        font-size: 14px;
+        color: #495057;
+        line-height: 1.6;
+      }
+    }
+  }
+   */
